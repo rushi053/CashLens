@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashLens: Where Your Finances Come Into Focus</title>
+    <meta name="description" content="Track, visualize, and understand your spending with an elegantly simple expense tracker that adapts to your life.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="CashLens Logo" class="logo-img">
+                    <span class="logo-text">CashLens</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="cta-button mobile-hidden">
+                    <a href="#download" class="btn btn-primary">Download</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Where Your Finances Come Into Focus</h1>
+                <p class="lead">Track, visualize, and understand your spending with an elegantly simple expense tracker that adapts to your life.</p>
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary">Download on the App Store</a>
+                    <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="images/hero-mockup.png" alt="CashLens App Interface" class="mockup-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,181.3C480,181,600,203,720,208C840,213,960,203,1080,176C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Designed with simplicity and power in mind</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3>Effortless Expense Tracking</h3>
+                    <p>Quickly add expenses with just a few taps. Categorize, add notes, and organize your spending with a beautifully intuitive interface that makes financial tracking feel effortless.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Insightful Statistics</h3>
+                    <p>Dynamic charts and breakdowns show exactly where your money goes. Identify spending patterns across days, weeks, months, or years with colorful, easy-to-understand visualizations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Custom Categories</h3>
+                    <p>Create custom expense categories with your choice of icons and colors. Unlike other apps that force you into predefined boxes, CashLens adapts to how you actually spend.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Privacy-Focused Design</h3>
+                    <p>No accounts, no data sharing, no cloud storage of your financial information. CashLens keeps your sensitive financial data private and secure on your own device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Simple steps to financial clarity</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Add Your Expenses</h3>
+                        <p>Quickly log expenses with our intuitive interface. Select a category, enter the amount, and you're done—or add details like notes for more context.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="images/step1.png" alt="Add expense interface">
+                    </div>
+                </div>
+                <div class="step reverse">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Gain Insights</h3>
+                        <p>View beautiful visualizations that show your spending patterns. Filter by time period or category to understand exactly where your money is going.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="images/step2.png" alt="Statistics interface">
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Make Better Decisions</h3>
+                        <p>Use your newfound financial clarity to identify areas where you can save. CashLens helps you spend smarter by showing the complete picture of your finances.</p>
+                    </div>
+                    <div class="step-image">
+                        <img src="images/step3.png" alt="Expense breakdown interface">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Users Say</h2>
+                <p>Stories from people who've improved their financial habits</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Finally, an expense tracker that doesn't require a finance degree to use. CashLens has helped me save over $200 a month just by making me aware of my spending patterns."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Samantha T.</div>
+                        <div class="author-title">Freelance Designer</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The custom categories feature is a game-changer. I can track my pet expenses separately from everything else, which no other app let me do easily."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Marcus L.</div>
+                        <div class="author-title">Pet Owner</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Clean, beautiful, and private. I don't have to worry about my financial data being stored in the cloud or used for marketing. Just what I needed."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-name">Priya K.</div>
+                        <div class="author-title">Privacy Advocate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="control-prev" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+                <div class="control-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+                <button class="control-next" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <h2>Get CashLens Today</h2>
+                <p>Take control of your financial future with the expense tracker that adapts to you.</p>
+                <div class="download-buttons">
+                    <a href="#" class="app-store-button">
+                        <img src="images/app-store-badge.svg" alt="Download on the App Store">
+                    </a>
+                </div>
+                <p class="download-note">Free to download on the App Store</p>
+            </div>
+            <div class="download-image">
+                <img src="images/download-visual.png" alt="CashLens app screens">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>The team behind CashLens</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>CashLens was created by a small team passionate about financial wellness and beautiful design. We built the expense tracker we always wanted—one that combines powerful features with elegant simplicity.</p>
+                    <p>Our mission is to help everyone understand and improve their financial habits through thoughtful, accessible technology. We believe financial tools should empower people, not confuse them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about CashLens</p>
+            </div>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is CashLens free to use?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! CashLens is completely free to download and use all features. We plan to add premium features in the future, but all current functionality will remain free.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need to create an account?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. CashLens works completely offline with no account required. Just download and start tracking.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Where is my data stored?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All your financial data is stored locally on your device only. We do not store your financial information in the cloud or on our servers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I export my data?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can export your expense data as CSV or JSON files for use in spreadsheets or other financial tools.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my financial data secure?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Since your data never leaves your device (unless you choose to export it), it's protected by your device's built-in security measures like Face ID, Touch ID, or your passcode.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I create a custom category?</h3>
+                        <span class="faq-icon"><i class="fas fa-plus"></i><i class="fas fa-minus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tap the "Manage" button in the category selector when adding an expense, then tap "Add New Category" to create a custom category with your choice of name, icon, and color.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3><i class="fas fa-headset"></i> Support</h3>
+                    <p>For technical support or app questions:</p>
+                    <a href="mailto:support@cashlens.app">support@cashlens.app</a>
+                </div>
+                <div class="contact-item">
+                    <h3><i class="fas fa-briefcase"></i> Business Inquiries</h3>
+                    <p>For partnership or business opportunities:</p>
+                    <a href="mailto:business@cashlens.app">business@cashlens.app</a>
+                </div>
+                <div class="contact-item">
+                    <h3><i class="fas fa-shield-alt"></i> Privacy Questions</h3>
+                    <p>For privacy-related concerns:</p>
+                    <a href="mailto:privacy@cashlens.app">privacy@cashlens.app</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="CashLens Logo" class="logo-img">
+                    <span class="logo-text">CashLens</span>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h4>App</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 CashLens. All rights reserved.</p>
+                <p class="apple-disclaimer">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
