@@ -16,7 +16,9 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <img src="images/logo.svg" alt="CashLens Logo" class="logo-img">
+                    <div class="logo-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
                     <span class="logo-text">CashLens</span>
                 </div>
                 <ul class="nav-links">
@@ -27,7 +29,7 @@
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
                 <div class="cta-button mobile-hidden">
-                    <a href="#download" class="btn btn-primary">Download</a>
+                    <a href="https://apps.apple.com/us/app/cashlens/id6743153951" class="btn btn-primary">Download</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
                     <span class="hamburger"></span>
@@ -42,13 +44,36 @@
                 <h1>Where Your Finances Come Into Focus</h1>
                 <p class="lead">Track, visualize, and understand your spending with an elegantly simple expense tracker that adapts to your life.</p>
                 <div class="hero-cta">
-                    <a href="#download" class="btn btn-primary">Download on the App Store</a>
-                    <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+                    <a href="https://apps.apple.com/us/app/cashlens/id6743153951" class="btn btn-light">Download on the App Store</a>
+                    <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
                 </div>
             </div>
             <div class="hero-image">
                 <div class="phone-mockup">
-                    <img src="images/hero-mockup.png" alt="CashLens App Interface" class="mockup-img">
+                    <div class="app-interface">
+                        <div class="app-screen">
+                            <div class="app-header">
+                                <div class="app-title">CashLens</div>
+                            </div>
+                            <div class="app-content">
+                                <div class="expense-item">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Groceries</span>
+                                    <span class="expense-amount">$76.00</span>
+                                </div>
+                                <div class="expense-item">
+                                    <i class="fas fa-plane"></i>
+                                    <span>Travel</span>
+                                    <span class="expense-amount">$340.00</span>
+                                </div>
+                                <div class="expense-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Food</span>
+                                    <span class="expense-amount">$58.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -111,8 +136,8 @@
                         <h3>Add Your Expenses</h3>
                         <p>Quickly log expenses with our intuitive interface. Select a category, enter the amount, and you're done—or add details like notes for more context.</p>
                     </div>
-                    <div class="step-image">
-                        <img src="images/step1.png" alt="Add expense interface">
+                    <div class="step-icon">
+                        <i class="fas fa-plus-circle"></i>
                     </div>
                 </div>
                 <div class="step reverse">
@@ -121,8 +146,8 @@
                         <h3>Gain Insights</h3>
                         <p>View beautiful visualizations that show your spending patterns. Filter by time period or category to understand exactly where your money is going.</p>
                     </div>
-                    <div class="step-image">
-                        <img src="images/step2.png" alt="Statistics interface">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-bar"></i>
                     </div>
                 </div>
                 <div class="step">
@@ -131,8 +156,8 @@
                         <h3>Make Better Decisions</h3>
                         <p>Use your newfound financial clarity to identify areas where you can save. CashLens helps you spend smarter by showing the complete picture of your finances.</p>
                     </div>
-                    <div class="step-image">
-                        <img src="images/step3.png" alt="Expense breakdown interface">
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
                     </div>
                 </div>
             </div>
@@ -151,8 +176,13 @@
                         <p>"Finally, an expense tracker that doesn't require a finance degree to use. CashLens has helped me save over $200 a month just by making me aware of my spending patterns."</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-name">Samantha T.</div>
-                        <div class="author-title">Freelance Designer</div>
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Samantha T.</div>
+                            <div class="author-title">Freelance Designer</div>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial">
@@ -160,8 +190,13 @@
                         <p>"The custom categories feature is a game-changer. I can track my pet expenses separately from everything else, which no other app let me do easily."</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-name">Marcus L.</div>
-                        <div class="author-title">Pet Owner</div>
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Marcus L.</div>
+                            <div class="author-title">Pet Owner</div>
+                        </div>
                     </div>
                 </div>
                 <div class="testimonial">
@@ -169,8 +204,13 @@
                         <p>"Clean, beautiful, and private. I don't have to worry about my financial data being stored in the cloud or used for marketing. Just what I needed."</p>
                     </div>
                     <div class="testimonial-author">
-                        <div class="author-name">Priya K.</div>
-                        <div class="author-title">Privacy Advocate</div>
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Priya K.</div>
+                            <div class="author-title">Privacy Advocate</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -192,14 +232,29 @@
                 <h2>Get CashLens Today</h2>
                 <p>Take control of your financial future with the expense tracker that adapts to you.</p>
                 <div class="download-buttons">
-                    <a href="#" class="app-store-button">
-                        <img src="images/app-store-badge.svg" alt="Download on the App Store">
+                    <a href="https://apps.apple.com/us/app/cashlens/id6743153951" class="btn btn-primary btn-large">
+                        <i class="fab fa-apple"></i> Download on the App Store
                     </a>
                 </div>
                 <p class="download-note">Free to download on the App Store</p>
             </div>
-            <div class="download-image">
-                <img src="images/download-visual.png" alt="CashLens app screens">
+            <div class="download-visual">
+                <div class="device-mockup">
+                    <div class="device-frame">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="device-features">
+                        <div class="feature-dot">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="feature-dot">
+                            <i class="fas fa-receipt"></i>
+                        </div>
+                        <div class="feature-dot">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -294,17 +349,17 @@
                 <div class="contact-item">
                     <h3><i class="fas fa-headset"></i> Support</h3>
                     <p>For technical support or app questions:</p>
-                    <a href="mailto:support@cashlens.app">support@cashlens.app</a>
+                    <a href="mailto:rjadeja053@gmail.com">rjadeja053@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <h3><i class="fas fa-briefcase"></i> Business Inquiries</h3>
                     <p>For partnership or business opportunities:</p>
-                    <a href="mailto:business@cashlens.app">business@cashlens.app</a>
+                    <a href="mailto:rjadeja053@gmail.com">rjadeja053@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <h3><i class="fas fa-shield-alt"></i> Privacy Questions</h3>
                     <p>For privacy-related concerns:</p>
-                    <a href="mailto:privacy@cashlens.app">privacy@cashlens.app</a>
+                    <a href="mailto:rjadeja053@gmail.com">rjadeja053@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -314,7 +369,9 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <img src="images/logo.svg" alt="CashLens Logo" class="logo-img">
+                    <div class="logo-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
                     <span class="logo-text">CashLens</span>
                 </div>
                 <div class="footer-nav">

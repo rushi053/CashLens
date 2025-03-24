@@ -32,20 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileMenu.classList.toggle('active');
         document.body.classList.toggle('no-scroll');
         
-        // Animate hamburger to X
+        // Toggle hamburger
         const hamburger = this.querySelector('.hamburger');
         if (this.classList.contains('active')) {
             hamburger.style.transform = 'rotate(45deg)';
             hamburger.style.backgroundColor = 'var(--primary-color)';
-            hamburger.style.width = '22px';
-            hamburger.querySelector('::before').style.transform = 'rotate(90deg)';
-            hamburger.querySelector('::before').style.top = '0';
-            hamburger.querySelector('::after').style.transform = 'rotate(90deg)';
-            hamburger.querySelector('::after').style.bottom = '0';
+            
+            // Use ES6 selector properly
+            const beforeElement = document.styleSheets[0].insertRule('.hamburger.active::before { transform: rotate(90deg); top: 0; }', 0);
+            const afterElement = document.styleSheets[0].insertRule('.hamburger.active::after { transform: rotate(90deg); bottom: 0; }', 0);
+            
+            hamburger.classList.add('active');
         } else {
             hamburger.style.transform = 'rotate(0)';
             hamburger.style.backgroundColor = 'var(--text-color)';
-            hamburger.style.width = '24px';
+            hamburger.classList.remove('active');
         }
     });
     
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenuToggle.classList.remove('active');
             mobileMenu.classList.remove('active');
             document.body.classList.remove('no-scroll');
+            document.querySelector('.hamburger').classList.remove('active');
         }
     });
     
@@ -88,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Hide all testimonials
         testimonials.forEach(testimonial => {
             testimonial.style.display = 'none';
+            testimonial.classList.remove('fade-in');
         });
         
         // Remove active class from all indicators
@@ -99,7 +102,9 @@ document.addEventListener('DOMContentLoaded', function() {
         testimonials[index].style.display = 'block';
         
         // Add fade-in animation
-        testimonials[index].classList.add('fade-in');
+        setTimeout(() => {
+            testimonials[index].classList.add('fade-in');
+        }, 50);
         
         // Add active class to the current indicator
         testimonialControls[index].classList.add('active');
@@ -134,13 +139,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Auto-advance testimonials every 5 seconds
-    setInterval(() => {
+    const testimonialInterval = setInterval(() => {
         let newIndex = currentSlide + 1;
         if (newIndex >= totalSlides) {
             newIndex = 0;
         }
         showSlide(newIndex);
     }, 5000);
+    
+    // Animation for feature-dots
+    const featureDots = document.querySelectorAll('.feature-dot');
+    featureDots.forEach((dot, index) => {
+        dot.style.animationDelay = `${index * 0.5}s`;
+    });
     
     // Animate elements when they come into view
     const animateOnScroll = function() {
@@ -160,5 +171,5 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateOnScroll);
     
     // Run it once on initial load
-    animateOnScroll();
+    setTimeout(animateOnScroll, 100);
 }); 
